@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Garage
 {
-    public class ConsoleUI
+    public class ConsoleUI:IUI
     {
         public void DisplayGarage(Vehicle vehicle)
         {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Garage
 {
 
-    public class GarageHandler
+    public class GarageHandler:IHandler
     {
 
         private Garage<Vehicle> garage;
@@ -23,17 +23,12 @@ namespace Garage
             uI = new ConsoleUI();
             size = uI.setSize();
             garage = new Garage<Vehicle>(size);
-            TestGarageHandler();
 
         }
         public void AddVehicle()
         {
 
             uI.AddVehicleToGarage(garage);
-
-        }
-        private void TestGarageHandler()
-        {
 
         }
         public void DisplayVehicles()
